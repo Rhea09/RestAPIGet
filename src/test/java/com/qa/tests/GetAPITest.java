@@ -134,7 +134,7 @@ public class GetAPITest extends Base {
 		String perPage =TestUtil.getValueByJpath(responseJson,"/per_page"); 
 		System.out.println("per Page value--->"+perPage);	
 		Assert.assertEquals(perPage, "3","Per Page value is not 3");
-
+		System.out.println("JSON");
 
 		//Assert data array value
 		String lastname =TestUtil.getValueByJpath(responseJson,"/data[0]/last_name"); 
